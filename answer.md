@@ -103,3 +103,20 @@ ld3 : Code phức tạp, khó bảo trì
 LD4 : Hiệu năng kém hơn
 - Trình duyệt phải load toàn bộ bảng rồi mới render.
 - Kém tối ưu hơn so với layout bằng CSS (Flexbox, Grid).
+
+
+Bài 3 : Debug HTML
+Lỗi 1 : Dòng 1 <!DOCTYPE> viết chưa đầy đủ  - Sửa lại thành <!DOCTYPE html>
+Lỗi 2 : Dòng 2 thẻ <html> thiếu thuộc tính ngôn ngữ - sửa lại <html lang="vi">
+Lỗi 3 : Dòng 4 thẻ <title> chưa đóng - sửa lại : </title>
+Lỗi 4 : Dòng 5 - giá trị charset chưa đúng - sửa lại "utf8" thành "UTF-8"
+Lỗi 5 : Dòng 8 - thẻ <h1> đóng sai cú pháp - sửa lại : </h1> 
+Lỗi 6 : Dòng 12 - thẻ <a> đóng sai cú pháp - sửa lại : </a>
+Lỗi 7 : Dòng 12 - Gía trị href="home" chưa rõ đích đến - sửa lại : thêm đích đến hoặc để "#"
+Lỗi 8 : Dòng 13 - Giá trị href="products" chưa rõ đích đến - sửa lại : thêm đích đến hoặc để "#"
+Lỗi 9: Dòng 19 — Thẻ <img> thiếu dấu ngoặc kép ở thuộc tính src — Sửa lại: src="iphone.jpg"
+Lỗi 10: Dòng 19 — Thẻ <img> thiếu thuộc tính alt — sửa lại : thêm alt="iPhone 16 Pro"
+Lỗi 11: Dòng 18 — Dùng <h3> chưa hợp lý vì đây là tiêu đề chính của section — Sửa lại <h2>
+Lỗi 12: Dòng 21 — Thẻ <p> và <b> lồng sai thứ tự — Sửa lại: <p>Giá: <b>25.990.000đ</p></b> thành <p>Giá: <b>25.990.000đ</b></p>
+Lỗi 13: Dòng 27–28 — Hàng tiêu đề bảng đang dùng <td> thay vì <th> — Sửa lại : dùng <th>
+Lỗi 14: Dòng 41 — Thẻ <p> trong footer chưa được đóng — Sửa lại <p>Copyright 2026</p>
