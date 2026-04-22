@@ -163,3 +163,17 @@ action : /tim-kiem
 method : k khai báo => dùng mặc định get
 Input types sử dụng : <input id="skw" type="text" ... name="key">
 <button type="submit"></button>
+
+Câu C2:   Một đồng nghiệp nói: "Dùng <div> cho mọi thứ rồi thêm class là được, không cần semantic HTML. Tốn thời gian học thêm thẻ mới."
+
+Viết 1 đoạn phản biện (200-300 từ), phải bao gồm:
+
+Ít nhất 2 lý do kỹ thuật (SEO, Accessibility)
+1 ví dụ cụ thể chứng minh semantic HTML giúp ích
+1 trường hợp thực tế mà <div> vẫn phù hợp
+
+Trả lời : Theo em , quan điểm dùng <div> cho mọi thứ có thể nhanh lúc đầu nhưng về kĩ thuật thì có vẻ chưa đc tối ưu . Về SEO , các công cụ tìm kiếm như google ko chỉ đọc nội dung mà còn ptich cấu trúc trang . Nếu ta dùng <header> , <nav> , <main> , ... thì bot nó sẽ hiểu rõ chỗ nào là nội dung chính , đâu là menu hay là footer còn nếu mà dùng nguyên <div> thì cấu trúc sẽ mơ hồ , giảm hiệu quả SEO
+Thứ hai là về Accessibility , semantic HTML hỗ trợ các công nghệ như screen reader. Ví dụ, khi dùng <nav>, trình đọc màn hình sẽ thông báo “navigation region”, giúp người khiếm thị dễ điều hướng. Nếu dùng <div class="menu">, công cụ hỗ trợ sẽ không hiểu ý nghĩa đó → trải nghiệm kém hơn.
+Ví dụ cụ thể: một trang blog. Nếu bài viết được bọc trong <article> và tiêu đề dùng <h1>, công cụ tìm kiếm sẽ nhận diện đây là nội dung chính. Điều này giúp SEO tốt hơn và người dùng dễ tiếp cận hơn, so với việc chỉ dùng <div class="post">.
+Tuy nhiên thì <div> vẫn rất cần thiết trong thực tế . Nó phù hợp khi mà ta cần 1 container thuần để layout hoặc styling kiểu như chia grid , flexbox hoặc nhóm các phần tử có ý nghĩa cụ thể . Khi đấy thì dùng <div> là đúng
+Chung quy lại thì sematic html k phải là tốn tgian mà là dùng để code rõ ràng , thân thiện và dễ bảo trì
